@@ -104,8 +104,16 @@ console.log(daysInMonth('February', false));
 
 function rps(num) {
   const compNum = Math.floor(Math.random() * 3) + 1;
-
   if (num !== 1 && num !== 2 && num !== 3) throw 'invalid input';
-
-  if (num === compNum) console.log('Looks like it\'s a tie');
+  if (num === compNum) {
+    console.log('Looks like it\'s a tie');
+  } else if ((num === 1 && compNum === 3) ||
+             (num === 2 && compNum === 1) ||
+             (num === 3 && compNum === 2)) {
+    console.log('I guess you win, Human');
+  } else {
+    console.log('Take that Human scum! Computers win again!');
+  }
 }
+
+rps(1);
