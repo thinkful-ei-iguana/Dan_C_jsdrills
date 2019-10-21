@@ -32,6 +32,17 @@ catch {
 
 
 
+function jediName(firstName, lastName){
+    let sliceOne = firstName.slice(0,2);
+    let sliceTwo = lastName.slice(0,3)
+    return sliceTwo + sliceOne;
+
+}
+console.log(jediName("Anthony", "Revier"));
+
+
+
+
 
 
 
