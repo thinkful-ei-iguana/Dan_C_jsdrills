@@ -1,9 +1,9 @@
 'use strict';
 function createGreeting(name, age) {
-    if (typeof age !== "number"){
-        throw new TypeError("NaN");
+  if (typeof age !== "number"){
+    throw new TypeError("NaN");
   }
-    if (age < 0) {
+  if (age < 0) {
     throw new Error('Age cannot be negative')
   }
   
@@ -25,9 +25,8 @@ try {
   const greeting = createGreeting('daniel');
   console.log(greeting);
 }
-
-catch {
-
+catch(e) {
+  console.error(e.message);
 }
 
 
