@@ -53,6 +53,26 @@ function beyond(num) {
   } 
 }
 
+function decode(word){
+    if (word[0] === "a"){
+        return word[1];
+    }else if (word[0] === "b"){
+        return word[2];
+    }else if (word[0] === "c"){
+        return word[3];
+    }else if (word[0] === "d"){
+        return word[5];
+    }else {
+        return " ";
+    }
+
+}
+
+let newArr = 'craft block argon meter bells brown croon droop'.split(" ");
+console.log(decode(newArr.map(x => decode[x]).join));
+
+
+
 
 
 
