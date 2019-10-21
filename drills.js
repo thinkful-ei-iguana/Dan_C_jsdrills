@@ -1,6 +1,6 @@
 'use strict';
-function createGreeting() {
-  return 'Hi, my name is Daniel and I am infinitely old.';
+function createGreeting(name, age) {
+  return `Hi, my name is ${name}  and I am ${age}.`;
 }
 
 const greeting = createGreeting();
