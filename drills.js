@@ -61,7 +61,7 @@ function decode(word){
     }else if (word[0] === "c"){
         return word[3];
     }else if (word[0] === "d"){
-        return word[5];
+        return word[4];
     }else {
         return " ";
     }
@@ -69,12 +69,37 @@ function decode(word){
 }
 
 let newArr = 'craft block argon meter bells brown croon droop'.split(" ");
-console.log(decode(newArr.map(x => decode[x]).join));
+console.log(decode('craft'));
+console.log(decode('block'));
+console.log(decode('argon'));
+console.log(decode('meter'));
+console.log(decode('bells'));
+console.log(decode('brown'));
+console.log(decode('croon'));
+console.log(decode('droop'));
 
 
+function daysInMonth(month, leapYear = false) {
+  const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  switch(month) {
+  case MONTHS[0] :
+  case MONTHS[2] :
+  case MONTHS[4] :
+  case MONTHS[6] :
+  case MONTHS[7] :
+  case MONTHS[9] :
+  case MONTHS[11] : return `${MONTHS[0]} has 31 days}`;
+  case MONTHS[3] : 
+  case MONTHS[5] : 
+  case MONTHS[8] : 
+  case MONTHS[10] : return `${MONTHS[10]} has 30 days`
+  case MONTHS[1] : return leapYear ? `${MONTHS[1]} has 29 days` : `${MONTHS[1]} has 28 days`;
+  default : throw 'You must provide a valid month';
+      
+  } 
+}
 
-
-
+console.log(daysInMonth('February', false));
 
 
 
