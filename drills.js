@@ -1,6 +1,9 @@
 'use strict';
 function createGreeting(name, age) {
-  if (age < 0) {
+    if (typeof age !== "number"){
+        throw new TypeError("NaN");
+  }
+    if (age < 0) {
     throw new Error('Age cannot be negative')
   }
   
@@ -11,9 +14,10 @@ function createGreeting(name, age) {
     return `Hi, my name is ${name} and I am ${age}. I was born in ${dob}`;
   }
   
+  
 }
 
-function getYearOfBirth(age) {}
+function getYearOfBirth(age) {
   return 2019 - age;
 }
 
