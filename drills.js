@@ -102,5 +102,10 @@ function daysInMonth(month, leapYear = false) {
 console.log(daysInMonth('February', false));
 
 
+function rps(num) {
+  const compNum = Math.floor(Math.random() * 3) + 1;
 
+  if (num !== 1 && num !== 2 && num !== 3) throw 'invalid input';
 
+  if (num === compNum) console.log('Looks like it\'s a tie');
+}
