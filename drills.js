@@ -39,6 +39,19 @@ function jediName(firstName, lastName){
 }
 console.log(jediName("Anthony", "Revier"));
 
+function beyond(num) {
+  if (!Number.isFinite(num)) {
+    console.log('And beyond');
+  } else if (Number.isFinite(num)) {
+    if (num > 0) {
+      console.log('To infinity');
+    } else if (num < 0) {
+      console.log('To negative infinity');
+    } else {
+      console.log('Staying home');
+    }
+  } 
+}
 
 
 
