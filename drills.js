@@ -54,6 +54,9 @@ function beyond(num) {
 }
 
 function decode(word){
+  let newArr = ['craft', 'block', 'argon', 'meter', 'bells','brown', 'croon', 'droop'];
+  let codeWord = newArr.map;
+  for (let i = 0; i < newArr.length; i++){
     if (word[0] === "a"){
         return word[1];
     }else if (word[0] === "b"){
@@ -61,15 +64,13 @@ function decode(word){
     }else if (word[0] === "c"){
         return word[3];
     }else if (word[0] === "d"){
-        return word[5];
+        return word[4];
     }else {
         return " ";
     }
-
+  }console.log(codeWord);
 }
 
-let newArr = 'craft block argon meter bells brown croon droop'.split(" ");
-console.log(decode(newArr.map(x => decode[x]).join));
 
 
 
@@ -78,4 +79,28 @@ console.log(decode(newArr.map(x => decode[x]).join));
 
 
 
+
+
+function kiBiBo(num){
+  let 
+}
+
+
+
+
+
+
+
+function getComputerChoice() {
+  
+  
+  switch (Math.floor(Math.random() * 3)) {
+    case 1:
+      return 'rock';
+    case 1:
+      return 'paper';
+    case 2:
+      return 'scissors';
+	}
+}
 
